@@ -1,0 +1,28 @@
+<%- include("../partials/header")%>
+<%- include("../partials/navbar")%>
+
+<main class="container">
+  
+    <form action="/blogs" method="POST">
+        <div class="card text-center">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title"><%= blog.name %></h5>
+              <h3 class="card-title"><%= blog.title %></h3>
+              <p class="card-text"><%=blog.desc%></p>
+              <a href="#" class="btn btn-primary">Delete</a>
+            </div>
+            <div class="card-footer text-muted">
+              2 days ago
+            </div>
+          </div>
+    </form>
+    
+
+</main>
+
+<%- include("../partials/footer") %>
+
+
